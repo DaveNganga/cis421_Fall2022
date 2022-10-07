@@ -1,68 +1,80 @@
 # General Skill Challenge
 
 ### 1.  Obedient Cat \| 5 points
-
+![image](https://user-images.githubusercontent.com/44644848/194637549-a70fc4f8-4af2-421c-a2b1-1a09f3cfca91.png)
  *Pretty much gives you a link to the capture the flag file. I run wget
  on the link and cat the flag file. I then copied that onto the flag
  prompt to get my points.*
 
 ### 2.  Wave a flag \| 10 points
 
-*Description: Can you invoke help flags for a tool or binary? This
+Description: Can you invoke help flags for a tool or binary? This
 program has extraordinarily helpful information\...*
 
-*Starts by providing a link to a file titled warm. I run wget on the
+Starts by providing a link to a file titled warm. I run wget on the
 link and cat the warm file. It was gibberish. I then tried to ran Man
 Warm because of the help hint.*
 
-*After clicking a hit. I tried running the file. Permission was denied
+After clicking a hit. I tried running the file. Permission was denied
 so I run chmod to get me permission. Then I run the file with a -h
 extension as it requests, and it gave me the file.*
 
 ### 3.  Let's Warm Up \| 50 points
 
-*Description: If I told you a word started with 0x70 in hexadecimal,
+Description: If I told you a word started with 0x70 in hexadecimal,
 what would it start with in ASCII?*
 
-*Quick google search tells me 0x70 is P. picoctf{p} is the answer*
+Quick google search tells me 0x70 is P. picoctf{p} is the answer*
 
 ### 4.  2Warm \| 50 points
 
-*Description: Can you convert the number 42 (base 10) to binary (base
+Description: Can you convert the number 42 (base 10) to binary (base
 2)?*
 
-*Quick google search tells me 42 base ten is* 101010 in base 2
+Quick google search tells me 42 base ten is* 101010 in base 2
 
 ### 5.  Convertme.py \| 100 points
 
-*Description: Run the Python script and convert the given number from
+Description: Run the Python script and convert the given number from
 decimal to binary to get the flag.*
 
-*Used 2get to get the script and run it on the python*
+Used 2get to get the script and run it on the python*
 
-*It asked what 28 is in binary.*
+It asked what 28 is in binary.*
 
-*It's 11100. I put that in and got the flag.*
+It's 11100. I put that in and got the flag.*
 
 ### 6.  PW crack 1 \| 100 points
+
+Description: Can you crack the passsword to get the flag? Gives you a password checker 
+app and an encrypted flag that needs to be in the same directory
 
 Cat encryption \| python file. This let me look into the python file
 where the password was printed in plain text.
 
 ### 7.  PW crack 2 \| 100 points
 
+Description: Can you crack the passsword to get the flag? Gives you a password checker 
+app and an encrypted flag that needs to be in the same directory
+
 Repeated the same proess for PW1 except the password was written in
 asciii. Employed a quick lookup table to find the answer as 4ec9
 
 ### 8.  PW crack 3 \| 100 points
 
+Description: Can you crack the passsword to get the flag? Gives you a password checker 
+app and an encrypted flag that needs to be in the same directory. This one also has 
+a hash that you need to download and there are 7 potential passwords printed in plain text.
+
 Repeated the process of PW2 but we just get an array of passwords
 
-The middle password was the right one
-
-Dba8
+just brute forced the password: The middle password was the right one: Dba8
 
 ### 9.  PW crack 4 \| 100 points
+
+Description: Can you crack the passsword to get the flag? Gives you a password checker 
+app and an encrypted flag that needs to be in the same directory. This one also has 
+a hash that you need to download and this time there are 100 potential passwords printed in plain text.
 
 Run Wget to get all the appropriate files had to edit the password
 checker file in order to makit it runnable through a script:
@@ -88,7 +100,7 @@ A better script would not stop when the password was right.
 
 ### 10. Mus1c \| 300 points
 
-> Begins by downloading lyrics to a song using wget. The hint here is:
+> The prompt says theres a song. The hint here is:
 > Do you think you can master rockstar?
 >
 > ![Graphical user interface, text, application, Teams Description
